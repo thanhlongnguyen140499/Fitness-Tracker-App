@@ -23,4 +23,7 @@ export const Colors = {
     tabIconDefault: '#9BA1A6',
     tabIconSelected: tintColorDark,
   },
+  moveColor: '#D7334B',
+  exerciseColor: '#ADF53A',
+  standColor: '#55BED5',
 };
