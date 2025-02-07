@@ -34,7 +34,7 @@ const Media = () => {
                 renderTabBar={props => (
                     <TabBar
                         {...props}
-                        activeColor="black"
+                        activeColor="#fff"
                         inactiveColor="gray"
                         style={{ backgroundColor: 'transparent' }}
                     />

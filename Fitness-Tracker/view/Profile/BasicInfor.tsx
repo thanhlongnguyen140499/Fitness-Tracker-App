@@ -10,13 +10,12 @@ const HEIGHT = 250;
 const curveRadius = 50; // Curve depth
 
 const BasicInfor = () => {
-
     return (
         <View style={styles.container}>
             {/* Background Container */}
             <View style={styles.backgroundContainer}>
                 <Image
-                    source={{ uri: "https://static.vecteezy.com/system/resources/previews/008/641/754/non_2x/living-room-with-armchair-sofa-and-monstera-plant-on-empty-and-copy-space-loft-concrete-wall-background-interior-and-architecture-concept-3d-illustration-rendering-photo.jpg" }}
+                    source={{ uri: "https://t3.ftcdn.net/jpg/04/29/35/62/240_F_429356296_CVQ5LkC6Pl55kUNLqLisVKgTw9vjyif1.jpg" }}
                     style={{
                         width: width,
                         height: height / 3,
@@ -35,7 +34,7 @@ const BasicInfor = () => {
           `}
                         stroke={DefaultTheme.colors.background}
                         strokeWidth="0"
-                        fill="#fff"
+                        fill="#000000"
                     />
                 </Svg>
             </View>
@@ -58,16 +57,16 @@ const BasicInfor = () => {
             {/* Network */}
             <View style={{ flexDirection: 'row', justifyContent: 'space-around', marginTop: 10 }}>
                 <View style={{ alignItems: 'center' }}>
-                    <Text style={styles.numbers}>1.2M</Text>
-                    <Text>Followers</Text>
+                    <Text style={[styles.text, styles.numbers]}>1.2M</Text>
+                    <Text style={[styles.text]}>Followers</Text>
                 </View>
                 <View style={{ alignItems: 'center' }}>
-                    <Text style={styles.numbers}>1.2M</Text>
-                    <Text>Following</Text>
+                    <Text style={[styles.text, styles.numbers]}>1.2M</Text>
+                    <Text style={[styles.text]}>Following</Text>
                 </View>
                 <View style={{ alignItems: 'center' }}>
-                    <Text style={styles.numbers}>1.2M</Text>
-                    <Text>Friends</Text>
+                    <Text style={[styles.text, styles.numbers]}>1.2M</Text>
+                    <Text style={[styles.text]}>Friends</Text>
                 </View>
             </View>
 
@@ -76,12 +75,12 @@ const BasicInfor = () => {
                 <TouchableOpacity
                     style={styles.actionButton}
                 >
-                    <Text style={{color: '#fff'}}>Edit Profile</Text>
+                    <Text style={[styles.text]}>Edit Profile</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={styles.actionButton}
                 >
-                    <Text style={{color: '#fff'}}>Add Friends</Text>
+                    <Text style={[styles.text]}>Add Friends</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -94,8 +93,11 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        backgroundColor: '#fff',
+        backgroundColor: '#000000',
         position: "relative",
+    },
+    text: {
+        color: '#ffffff',
     },
     backgroundContainer: {
         overflow: "hidden",
@@ -128,6 +130,7 @@ const styles = StyleSheet.create({
         marginTop: 120,
         fontSize: 22,
         fontWeight: "bold",
+        color: "#fff",
     },
     title: {
         fontSize: 16,
@@ -144,6 +147,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 18,
         paddingHorizontal: 20,
+        color: "#fff",
     },
     actionButton: {
         backgroundColor: "purple",
