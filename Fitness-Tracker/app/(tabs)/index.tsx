@@ -105,7 +105,7 @@ const index = () => {
 
             <View style={[{ padding: 10 }]}>
               <Text style={[styles.text, styles.contentTitle]}>Today</Text>
-              <Text style={[styles.text, styles.contentNumber, { color: Colors.exerciseColor }]}>5,420</Text>
+              <Text style={[styles.text, styles.contentNumber, { color: Colors.primary }]}>5,420</Text>
               <AppBarChart data={[
                 { time: "12AM", value: 10 },
                 { time: "6AM", value: 15 },
@@ -123,7 +123,7 @@ const index = () => {
 
             <View style={[{ padding: 10 }]}>
               <Text style={[styles.text, styles.contentTitle]}>Today</Text>
-              <Text style={[styles.text, styles.contentNumber, { color: Colors.moveColor }]}>1.21MI</Text>
+              <Text style={[styles.text, styles.contentNumber, { color: Colors.primary }]}>1.21MI</Text>
               <AppBarChart data={[
                 { time: "12AM", value: 5 },
                 { time: "6AM", value: 0 },
